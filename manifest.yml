@@ -1,0 +1,18 @@
+modules:
+  macro:
+    - key: xkcd-random
+      function: main
+      title: xkcd-random
+      description: Inserts random xkcd comic!
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/fc01d4fa-845c-4b8a-a492-90ffb2ab19dc
+permissions:
+  scopes: []
+  external:
+    fetch:
+      backend:
+        - '*.xkcd.com'
+        - 'xkcd.com'
