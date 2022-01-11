@@ -4,9 +4,13 @@ modules:
       function: main
       title: xkcd-random
       description: Inserts random xkcd comic!
+      config:
+        function: configuration
   function:
     - key: main
       handler: index.run
+    - key: configuration
+      handler: index.configure
 app:
   id: ari:cloud:ecosystem::app/fc01d4fa-845c-4b8a-a492-90ffb2ab19dc
 permissions:
